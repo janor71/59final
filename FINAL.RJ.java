@@ -5,7 +5,7 @@
 String title=  "CST112 FINAL," ;
 String author=  "Rebeca Janowicz!";
 String title1 =" Score=";
-String news=" r= reset, q = exit";
+String news=" r= reset, q = exit,  t to send octopi to bottom";
 
 String s="";
 //
@@ -242,6 +242,7 @@ void messages() {
   text( "Hold S key to show the speed ", 5, 631);
   text( "Hold L key for leg order", 5, 645);   
   text( "Hold F key for lobster report", 5, 675);
+  //text( " hold t key to send octopi to bottom',
 }
 // Move octupus  & boats.
 void action() { 
@@ -581,6 +582,7 @@ class Triangle {
     if (key == 'S') { sortOctopiDY(group, group.length); } // Sort speed (dy)
     if (key == 'L') { sortOctopiLegs(group, group.length); }  // Sort # legs 
     if (key == 'F') { sortLobsterX(rjo, rjo.length); }
+    
     // bring optupi to bottom
     if (key == 't') {
       for (int k=0; k < many; k++ ) {    // to the top
