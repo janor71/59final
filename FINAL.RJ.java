@@ -63,7 +63,7 @@ void reset() {
     rjo[i]=  new Lobster ( Lobsternames[i]);       // Lobster
   }
   // triangle
-  float yy=250; // this is new to prove a point. see min -13 on video
+  float yy=250; 
   float xx= 700;
   for (int i=0; i < tri.length; i++) {
     tri[i] = new Triangle(  xx, yy );  // best way to add triangles
